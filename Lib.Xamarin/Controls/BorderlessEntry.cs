@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace ConsultorMedico.Lib.Controls
+namespace Lib.Mobile.Controls
 {
     public class BorderlessEntry : Entry
     {

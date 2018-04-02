@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{776A9C55-3223-4485-9BD7-1EC4CB555E2C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Lib.Firebase</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Database\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Http\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\IFirebaseQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FirebaseCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FirebaseObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Http\HttpClientExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\FirebaseQuery.cs" />
+  </ItemGroup>
+</Project>

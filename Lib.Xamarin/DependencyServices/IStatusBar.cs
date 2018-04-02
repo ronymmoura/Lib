@@ -1,10 +1,8 @@
-﻿using System;
-namespace Lib.Xamarin.DependencyServices
+﻿namespace Lib.Mobile.DependencyServices
 {
-    public class IStatusBar
+    public interface IStatusBar
     {
-        public IStatusBar()
-        {
-        }
+        void Hide();
+        void Show();
     }
 }

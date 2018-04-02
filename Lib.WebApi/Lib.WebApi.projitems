@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{03D7B114-7464-4800-A6B4-04E83BD9814C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Lib.WebApi</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)JWT\AuthenticationToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JWT\SigningConfigurations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JWT\TokenConfigurations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JWT\JwtIssuerOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JWT\JsonWebToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)JWT\" />
+  </ItemGroup>
+</Project>

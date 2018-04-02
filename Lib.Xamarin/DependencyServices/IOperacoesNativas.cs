@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsultorMedico.Lib.DependencyServices
+namespace Lib.Mobile.DependencyServices
 {
     public interface IOperacoesNativas
     {

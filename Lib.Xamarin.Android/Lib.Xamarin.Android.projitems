@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{2D6167B3-AD32-4AB6-AEA1-0BBEB1725E34}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Lib.Xamarin.Android</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\OperacoesNativas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\BorderlessEntryRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\StatusBarImplementation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)DependencyServices\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
+  </ItemGroup>
+</Project>
